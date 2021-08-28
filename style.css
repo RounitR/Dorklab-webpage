@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+}
+
+nav {
+    width: 100%;
+    background-color: transparent;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
+}
+
+.list {
+    list-style-type: none;
+    float: left;
+    margin-top: 15px;
+}
+
+.one span:hover {
+    color: #28FFBF;
+    transform: translateY(5px);
+}
+
+.one span:after {
+    content: "";
+    position: absolute;
+    background-color: #28FFBF;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.one span:hover:after {
+    width: 100%;
+}
+
+.one {
+    display: inline-block;
+}
+
+.one span {
+    text-decoration: none;
+    padding: 20px 40px;
+    text-align: center;
+    color: white;
+    display: flex;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.list-two {
+    list-style-type: none;
+    float: right;
+    margin-top: 9px;
+}
+
+.two span:hover {
+    color: #28FFBF;
+    transform: translateY(5px);
+}
+
+.two {
+    display: inline-block;
+}
+
+.two span {
+    text-decoration: none;
+    padding: 20px 10px;
+    margin-right: 25px;
+    text-align: center;
+    color: white;
+    display: flex;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.two span button {
+    background-color: white;
+    width: 80px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    font-weight: 600;
+}
+
+.two span button:hover {
+    background-color: #28FFBF;
+    transform: translateY(1px);
+}
+
+.img {
+    width: 230px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.logo {
+    float: left;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.video {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+.head {
+    position: relative;
+    color: white;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 25rem;
+}
+
+.head h1 {
+    font-size: 5rem;
+    padding-bottom: 10px;
+}
+
+.head h2 {
+    font-size: 2rem;
+    padding-bottom: 30px;
+}
+
+.head button {
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+}
+
+.head button:hover {
+    background-color: #28FFBF;
+    transform: translateY(5px);
+}
+
+.searchbox {
+    left: 82%;
+    top: 46px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    height: 30px;
+    border-radius: 40px;
+    padding: 6px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.searchbox:hover>.srch-txt {
+    width: 200px;
+    padding: 0 10px;
+}
+
+.searchbox:hover>.srch-btn {
+    background: #28FFBF;
+}
+
+.srch-btn {
+    color: black;
+    float: right;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.srch-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 14px;
+    transition: 0.4s;
+    line-height: 30px;
+    width: 0px;
+}
+
+.main {
+    margin: 0;
+}
